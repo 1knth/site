@@ -33,7 +33,7 @@
 				</div>
 				<img id="pfp" src="/me.jpeg" alt="Kenneth Yang" >
         <div id="desc">
-					<p>Kenneth Yang is an inquisitive explorer interested in music, programming, and personal projects.</p>
+					<p>inquisitive explorer</p>
 					<div>
 						<p> what i'm </p>
 						<div id="links">
