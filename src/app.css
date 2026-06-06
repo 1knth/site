@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon+Mono:wght@400;500;600;700&display=swap');
 
 :root {
+
   /* font-family: JetBrains; */
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
@@ -12,11 +13,13 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
   @media (max-width: 1024px) {
     font-size: 16px;
   }
 }
-
+* {
+}
 body {
   margin: 0;
     /* font-family: 'JetBrains Mono', monospace; */
@@ -30,8 +33,8 @@ h1 {
   margin: 0;
   letter-spacing: -1.68px;
 }
-
 h2 {
+
   color: white;
   font-size: 24px;
   line-height: 118%;
@@ -40,17 +43,34 @@ h2 {
     font-size: 20px;
   }
 }
-
 p {
   margin: 0;
 }
 
-#center {
-  background-color: #1C1C1C;
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
 }
 
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
+
+#center {
+
+  background-color: #1C1C1C;
+}
+#description {
+  
+}
 #main {
-  padding-top: 5rem;
+  padding-top: 2rem;
   box-sizing: border-box;
   color: white;
   gap: 1rem;
@@ -58,7 +78,6 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-	/* justify-content: center; */
 }
 
 #card {
@@ -66,13 +85,12 @@ p {
 	text-align: center;
   border-radius: 10px;
   width: 50vw;
-  height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
+  gap: 1rem;
 
-	gap: 2rem;
 }
 
 #card h1 {
@@ -82,26 +100,28 @@ p {
 #desc {
   display: flex;
   flex-direction: column;
+	gap: 20px;
   align-items: center;
-	/* margin-top: 3rem; */
 }
 
-#links {
+.links {
   color: #FED29E;
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 #pfp {
-	width: 300px;
-	height: 300px;
+	width: 250px;
+	height: 350px;
 	object-fit: cover;
-	cursor: pointer;
-	transition: 0.5s ease;
+	border-radius: 4px;
 }
 
-#pfp:hover {
-	transform: translateX(-200px);
-	opacity: 50%;
+#inquiries {
+	color: #606060
 }
